@@ -29,7 +29,6 @@ app.use(
 );
 app.use(express.static(path.join(__dirname, "public")));
 
-// 改成單引號
 app.get("/healthcheck", (req, res) => {
   res.status(200).json({
     status: "success",
